@@ -212,3 +212,30 @@ h1 {
   .nav-links { margin-top: 0.8rem; justify-content: flex-start; }
   h1 { font-size: clamp(2.7rem, 16vw, 4.6rem); }
 }
+
+
+.sources-hero, .source-title { padding: clamp(4rem, 8vw, 7rem) 0 3rem; }
+.sources-hero h1, .source-title h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.8rem, 7vw, 5.8rem); font-weight: 500; letter-spacing: -0.04em; }
+.sources-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding: 0 0 5rem; }
+.source-card { min-height: 10rem; padding: 1.4rem; display: flex; flex-direction: column; justify-content: space-between; gap: .6rem; border: 1px solid var(--line); background: var(--surface); text-decoration: none; }
+.source-card:hover, .source-card:focus-visible { border-color: var(--accent); transform: translateY(-2px); }
+.source-card strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.6rem; font-weight: 500; }
+.source-card span:last-child, .source-number { color: var(--muted); }
+.license-note { margin: 0 0 4rem; padding: 1.5rem; border-left: 2px solid var(--accent); background: var(--accent-soft); }
+.license-note h2 { margin: 0 0 .8rem; font-family: Georgia, serif; font-size: 1.7rem; font-weight: 500; }
+.license-note p { margin: .6rem 0; color: #d4d1c9; }
+.breadcrumbs { display: flex; gap: .65rem; padding-top: 2rem; color: var(--muted); font-size: .92rem; }
+.source-meta { display: grid; gap: .6rem; margin-top: 1.5rem; color: var(--muted); overflow-wrap: anywhere; }
+.source-meta code { font-size: .78rem; }
+.source-list { display: grid; gap: 1rem; padding-bottom: 5rem; }
+.source-entry { padding: clamp(1rem, 3vw, 1.6rem); border: 1px solid var(--line); background: var(--surface); }
+.source-entry-head { display: grid; grid-template-columns: 3.5rem 1fr; gap: 1rem; align-items: baseline; }
+.source-entry-head span { color: var(--accent); font-weight: 750; }
+.source-entry h2 { margin: 0; font-family: Georgia, serif; font-size: clamp(1.25rem, 3vw, 1.8rem); font-weight: 500; overflow-wrap: anywhere; }
+.source-entry dl { margin: 1.2rem 0 0; display: grid; gap: .75rem; }
+.source-entry dl div { display: grid; grid-template-columns: minmax(8rem, .25fr) minmax(0, .75fr); gap: 1rem; border-top: 1px solid var(--line); padding-top: .75rem; }
+.source-entry dt { color: var(--muted); }
+.source-entry dd { margin: 0; overflow-wrap: anywhere; }
+.source-entry p { margin: 1rem 0 0; color: #d4d1c9; }
+.text-link { color: var(--accent); text-underline-offset: .25rem; }
+@media (max-width: 720px) { .sources-grid { grid-template-columns: 1fr; } .source-entry dl div { grid-template-columns: 1fr; gap: .2rem; } }
